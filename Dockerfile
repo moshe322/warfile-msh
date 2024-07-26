@@ -2,7 +2,7 @@
 FROM tomcat:9.0
 
 # Copy the WAR file to the webapps directory of Tomcat
-COPY tcs_warproj.war /usr/local/tomcat/webapps/
+COPY target/tcs_warproj.war /usr/local/tomcat/webapps/
 
 # Expose the default Tomcat port
 EXPOSE 8080
